@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  tensorflow:
+    build: .
+    runtime: nvidia
+    volumes:
+      - ./result/:/Wavenet/result
+    tty: true
