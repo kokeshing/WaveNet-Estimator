@@ -9,7 +9,7 @@ RUN mkdir ./jsut/test
 RUN mkdir ./jsut/tfrecord
 
 RUN mv ./jsut/jsut_ver1.1/* ./jsut/
-RUN git clone https://github.com/kokeshing/Wavenet.git
+RUN git clone https://github.com/kokeshing/Wavenet-Estimator.git
 WORKDIR Wavenet
 RUN mkdir result
 RUN mkdir dataset

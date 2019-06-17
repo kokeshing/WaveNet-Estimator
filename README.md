@@ -20,8 +20,10 @@ https://kokeshing.com/wavenet/
 
 ## WIP
 
-- gaussian wavenet
-- ema
+- gaussian wavenet(Implemented)
+- global conditioning(Implemented)
+- 2dconv, 1dconv, Nearest neighbor upsampling for local conditioning(Implemented)
+- ema(Not implemented)
 
 ## Reference
 
