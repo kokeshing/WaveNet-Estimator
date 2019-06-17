@@ -276,10 +276,10 @@ class WaveNet(tf.keras.Model):
 
             if self._hparams.input_type == "raw":
                 assert self._hparams.out_channels == 2
-                x = SampleFromGaussian(tf.reshape(x, [batch_size, 1, -1]),
+                x = SampleFromGaussian(tf.reshape(x, [batch_size, -1, 2]),
                                        log_scale_min_gauss=log_scale_min_gauss)
 
-                next_inputs = tf.expand_dims(x, axis=-1)
+                next_inputs = tf.expand_dims(x, axis=1)
 
             else:
                 if softmax:
