@@ -49,7 +49,7 @@ class CasualConv1D(tf.keras.layers.Wrapper):
         )
 
         super().__init__(layer, name=name, **kwargs)
-        self._track_checkpointable(layer, name='layer')
+        self._track_trackable(layer, name='layer')
         self.filters = filters
         self.kw = kernel_size
         self.dilation_rate = dilation_rate
