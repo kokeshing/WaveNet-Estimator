@@ -1,5 +1,5 @@
 numpy==1.16.3
 librosa==0.6.3
-scipy==1.2.1
+scipy==1.10.0
 scikit-learn==0.19.1
 tqdm==4.31.1
